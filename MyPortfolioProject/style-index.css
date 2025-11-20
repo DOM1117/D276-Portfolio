@@ -1,0 +1,108 @@
+/* style.css - External Stylesheet for Dominiqua Way's Portfolio */
+
+        /* Color Palette Variables */
+        :root {
+            --color-primary: #1441ce;    /* Blue for headings/links */
+            --color-secondary: #eb615f;  /* Red/Salmon for emphasis/nav */
+            --color-accent: #ef7f60;     /* Coral for separators/borders */
+            --color-background: #fadedd; /* Light Pink/Cream for body */
+            --color-background-form: #f2f2f2; /* Light Gray for Form Area */
+            --color-text-light: #ffffff; /* White */
+        }
+        
+        /* Reset and Base Styles */
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0; 
+            background-color: var(--color-background);
+        }
+        * {
+            box-sizing: border-box;
+        }
+
+        /* --- INDEX.HTML HEADER STYLING --- */
+        header { 
+            background-color: var(--color-primary); /* Blue Background */
+            color: var(--color-text-light);
+            padding: 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5em;
+        }
+        nav { /* Navigation Bar - Separate from Header */
+            background-color: var(--color-secondary); /* Red/Salmon Background */
+            padding: 10px 0;
+            text-align: center;
+        }
+        nav a { 
+            margin: 0 5px; /* Reduced margin slightly to accommodate pipes */
+            text-decoration: none;
+            color: var(--color-text-light);
+            font-weight: bold;
+            text-transform: none; 
+        }
+        main {
+            padding: 20px 0;
+            max-width: 900px;
+            margin: 0 auto;
+            background-color: var(--color-text-light);
+        }
+        section, article {
+            padding: 15px 30px;
+            margin-bottom: 20px;
+            border-left: 5px solid var(--color-secondary);
+        }
+        h2, h3, h4, h5 {
+            color: var(--color-primary);
+            border-bottom: 2px solid var(--color-accent);
+            padding-bottom: 5px;
+            margin-top: 0;
+        }
+        hr {
+            border: 0;
+            height: 1px;
+            background-color: var(--color-accent);
+            margin: 20px 30px;
+        }
+        ul {
+            list-style-type: none;
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 10px;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        /* Style for the date div */
+        .date-container {
+            text-align: right;
+            font-size: 0.8em;
+            color: #666;
+            padding: 0 30px 10px;
+        }
+        /* Table Styles */
+        table {
+            width: 90%;
+            margin: 15px auto;
+            border-collapse: collapse;
+        }
+        caption {
+            font-weight: bold;
+            color: var(--color-primary);
+            padding: 5px;
+            caption-side: top;
+        }
+        th, td {
+            border: 1px solid var(--color-accent);
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: var(--color-background);
+            color: var(--color-primary);
+        }
